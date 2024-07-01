@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-sign-up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.background-sign {
+    width: 50%;
+    height: 100vh;
+    background: url(../img/login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-sign img {
+    width: 129.5px;
+    height: 28px;
+    cursor: pointer;
+    position: relative;
+    bottom: 33.5%;
+}
+
+.container-form {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/login-gradient.jpg);
+}
+
+/* Container - Form */
+.formulario {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: inset 0 0 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header-description {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 15px;
+}
+
+.header-description h1 {
+    color: #131740;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px 0px 15px;
+}
+
+.header-description p {
+    color: #5A5D79;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-description p a {
+    color: #8358FF;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 50px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    border: transparent;
+    box-shadow: 4px 4px 9px #c5c5c5,
+                -3px -3px 6px #ffffff;
+    background: rgba(255, 255, 255, 0.9);
+    transition: .2s ease;
+}
+
+::placeholder {
+    color: #5A5D79;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+:focus-visible {
+    outline: 1px solid #8358FF;
+}
+
+.inputs button {
+    width: 60%;
+    color: #fff;
+    padding: 13px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 9px;
+    border: transparent;
+    box-sizing: border-box;
+    background-color: #8358FF;
+    box-shadow: 2px 2px 12px #8358FF,
+                -1px -1px 6px #8358FF;
+    transition: .6s ease;
+}
+
+.inputs button:nth-last-child(1) {
+    margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-sign-up {
+        flex-direction: column;
+    }
+
+    .background-sign, .container-form {
+        width: 100%;
+        height: auto;
+    }
+
+    .background-sign {
+        height: 50vh; 
+        background-size: cover;
+    }
+
+    .background-sign img {
+        position: static; 
+        margin-top: 20px; 
+    }
+
+    .container-form {
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 20px; 
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header-description h1 {
+        font-size: 28px;
+    }
+
+    .header-description p {
+        font-size: 16px;
+    }
+
+    .header-description p a {
+        font-size: 18px;
+    }
+
+    .inputs input {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .header-description h1 {
+        font-size: 24px;
+    }
+
+    .header-description p {
+        font-size: 14px;
+    }
+
+    .header-description p a {
+        font-size: 16px;
+    }
+
+    .inputs input {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1092px) {
+    .container-sign-up {
+        flex-direction: column;
+    }
+
+    .background-sign, .container-form {
+        width: 100%;
+        height: auto;
+    }
+
+    .background-sign {
+        height: 50vh; 
+        background-size: cover;
+    }
+
+    .background-sign img {
+        position: static; 
+        margin-top: 20px; 
+    }
+
+    .container-form {
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 20px; 
+    }
+
+    .formulario {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .header-description h1 {
+        font-size: 28px;
+    }
+
+    .header-description p {
+        font-size: 16px;
+    }
+
+    .header-description p a {
+        font-size: 18px;
+    }
+
+    .inputs input {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1249px) {
+    .container-sign-up {
+        flex-direction: column;
+    }
+
+    .background-sign, .container-form {
+        width: 100%;
+        height: auto;
+    }
+
+    .background-sign {
+        height: 50vh; 
+        background-size: cover;
+    }
+
+    .background-sign img {
+        position: static; 
+        margin-top: 20px; 
+    }
+
+    .container-form {
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 20px; 
+    }
+
+    .formulario {
+        width: 80%;
+        max-width: 600px; 
+        margin: 0 auto; 
+        padding: 15px;
+    }
+
+    .header-description h1 {
+        font-size: 32px; 
+    }
+
+    .header-description p {
+        font-size: 16px; 
+    }
+
+    .header-description p a {
+        font-size: 18px; 
+    }
+
+    .inputs input {
+        margin-bottom: 20px; 
+        padding: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .header-description h1 {
+        font-size: 24px;
+    }
+
+    .header-description p {
+        font-size: 14px;
+    }
+
+    .header-description p a {
+        font-size: 16px;
+    }
+
+    .inputs input {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
+
+/* Validation */
+.error {
+    width: 100%;
+    height: auto;
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+}
